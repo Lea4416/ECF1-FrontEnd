@@ -1,0 +1,55 @@
+body {
+    background: url(../images/background.webp);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p {
+    color: blue;
+    text-decoration: underline
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    background: rgba(128, 128, 128, 0.336);
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+    color: white;
+    background: rgba(128, 128, 128, 0.336);
+    width: 25%;
+    display: block;
+    margin: 1% auto;
+}
+
+button {
+    background-color: #8A2BE2;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    /* The text appears bold */
+    text-transform: uppercase;
+    /* The text is in uppercase */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: Adds a subtle shadow */
+    cursor: pointer;
+    /* Indicates it's clickable */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    /* Optional: A subtle white border */
+}
