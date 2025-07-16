@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="stars"></div>
     <header>
         <img src="./assets/images/sigle.webp" alt="Mon sigle">
         <p>ECF1 : FRONTEND</p>
@@ -16,28 +17,35 @@
     <main>
         <h1>astrologie</h1>
         <p>L'astrologie repose sur l'interprétation de la carte du ciel de naissance de l'individu. Cette pratique
-            remonte à plus de 4 000 ans : les premières traces proviennent de la Mésopotamie, où les prêtres observaient
-            le ciel pour comprendre les événements terrestres. La carte du ciel est construite à partir de l'intégration
+            remonte à plus de 4 000 ans : les premières traces proviennent de la Mésopotamie, où les prêtres
+            observaient
+            le ciel pour comprendre les événements terrestres. La carte du ciel est construite à partir de
+            l'intégration
             de deux mouvements distincts de la Terre : sa rotation autour du soleil, qui correspond aux rythmes des
             saisons et à la variation de la durée du jour au cours de l'année, sa rotation autour d'elle-même, qui
-            rythme l'alternance des jours et des nuits. Vu de la Terre et du point de naissance de l'individu, il est
-            ainsi possible d'établir une carte de la position des astres par rapport à un système de coordonnées basé
+            rythme l'alternance des jours et des nuits. Vu de la Terre et du point de naissance de l'individu, il
+            est
+            ainsi possible d'établir une carte de la position des astres par rapport à un système de coordonnées
+            basé
             sur l'horizon et le zénith.</p>
-        <button>Tirer les cartes</button>
-        <div id="carte"></div>
+
+        <button onclick="astrologie()">Tirer les 12 messages</button>
+        <div id="reponse">
+            <div id="carte"></div>
+        </div>
     </main>
     <footer>
-        <img src="./assets/images/logo.webp" alt="Logo Léa">
+        <img src="./assets/images/logo_avec fond.webp" alt="Logo Léa" class="logo">
         <p>&copy;Léa Martinaud</p>
         <p>&copy;ECF1 : Frontend</p>
         <div class="mention-legale">
-            <a href="">Mention légale</a>
-            <a href="">Condition d'utilisation</a>
-            <a href="">RGPD</a>
-            <a href="">A propos</a>
+            <a href="./mention_legale.html" class="a-footer">Mentions légales</a>
+            <a href="./CGU.html" class="a-footer">Conditions d'utilisation</a>
+            <a href="./RGPD.html" class="a-footer">RGPD</a>
+            <a href="./about.html" class="a-footer">À propos</a>
         </div>
     </footer>
-
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
