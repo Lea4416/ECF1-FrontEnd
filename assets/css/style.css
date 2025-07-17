@@ -3,6 +3,36 @@
     src: url(../Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf);
 }
 
+/* Animation scintillement */
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes translate {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
@@ -30,19 +60,6 @@ body {
     animation: twinkle 2s infinite ease-in-out;
 }
 
-/* Animation scintillement */
-@keyframes twinkle {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.2;
-    }
-}
-
 
 header {
     display: flex;
@@ -57,13 +74,18 @@ header p {
 }
 
 h1 {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #C5283D;
     text-decoration: underline;
     text-transform: uppercase;
-    width: 25%;
-    display: block;
-    margin: 0% auto;
+}
+
+h2 {
+    text-align: center;
+    color: green;
+    text-decoration: underline;
 }
 
 .astrologie {
@@ -110,27 +132,6 @@ button {
     padding: 1%;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer p {
-    color: #ffffff;
-}
-
-.logo {
-    width: 5%;
-}
-
-.mention-legale {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 a {
     color: #ffffff;
     text-decoration: none;
@@ -148,11 +149,15 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
-    margin: 5% 10%;
+    margin: 1% 10%;
     color: white;
+    margin-top: 0%;
 }
 
 .carte_horoscope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #ffd900;
     border: 1px solid black;
     border-radius: 25px;
@@ -164,11 +169,7 @@ a {
     box-shadow: 0 4px 15px rgb(255, 255, 255);
 }
 
-h2 {
-    text-align: center;
-    color: green;
-    text-decoration: underline;
-}
+
 
 .carte_horoscope p {
     color: #7B00FF;
@@ -195,10 +196,34 @@ label {
     margin: 10% 0%;
 }
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+.logo {
+    width: 5%;
+}
+
+.mention-legale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat {
+    width: 5%;
+    animation-name: translate;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
 /* Responsive */

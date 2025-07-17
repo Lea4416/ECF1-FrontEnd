@@ -5,39 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>ECF1 - Front-end</title>
+    <title>Tirage astrologique des 12 signes - ECF1 Frontend - Léa Martinaud</title>
+    <link rel="canonical" href="https://ecf1-martinaud-lea.sidathsoeun.fr">
+    <link rel="shortcut icon" href="./assets/images/icon.webp">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description"
+        content="Tirez un message inspirant associé à chaque signe du zodiaque. Une expérience simple et interactive proposée par Léa Martinaud, développeuse web en formation.">
+
+    <meta name="author" content="Léa Martinaud">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecf1-martinaud-lea.sidathsoeun.fr">
+    <meta property="og:title" content="Tirage astrologique des 12 signes - Léa Martinaud">
+    <meta property="og:description"
+        content="Explorez votre signe astrologique et recevez un message inspirant. Une page interactive signée Léa Martinaud.">
+    <meta property="og:image" content="https://ecf1-martinaud-lea.sidathsoeun.fr/assets/images/og-image.webp">
+
+    <!--Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tirage astrologique des 12 signes - Léa Martinaud">
+    <meta name="twitter:description"
+        content="Tirez un mentrat inspirant selon votre signe astrologique. Une création originale de Léa Martinaud pour son ECF Frontend.">
+    <meta name="twitter:image" content="https://ecf1-martinaud-lea.sidathsoeun.fr/assets/images/og-image.webp">
+
 </head>
 
 <body>
     <div class="stars"></div>
     <header>
-        <img src="./assets/images/sigle.webp" alt="Mon sigle">
+        <img src="./assets/images/sigle.webp" alt="Sigle personelle de Léa Martinaud">
         <p>ECF1 : FRONTEND</p>
     </header>
     <main>
-        <h1>astrologie</h1>
+        <h1>Tirage astrologique des 12 signes</h1>
         <p>L'astrologie repose sur l'interprétation de la carte du ciel de naissance de l'individu. Cette pratique
             remonte à plus de 4 000 ans : les premières traces proviennent de la Mésopotamie, où les prêtres
             observaient
-            le ciel pour comprendre les événements terrestres. La carte du ciel est construite à partir de
-            l'intégration
-            de deux mouvements distincts de la Terre : sa rotation autour du soleil, qui correspond aux rythmes des
-            saisons et à la variation de la durée du jour au cours de l'année, sa rotation autour d'elle-même, qui
-            rythme l'alternance des jours et des nuits. Vu de la Terre et du point de naissance de l'individu, il
+            le ciel pour comprendre les événements terrestres. "La carte du ciel repose sur deux mouvements distincts de
+            la Terre : sa rotation autour du Soleil, qui rythme les saisons, et sa rotation sur elle-même, qui crée
+            l’alternance jour/nuit. Vu de la Terre et du point de naissance de l'individu, il
             est
             ainsi possible d'établir une carte de la position des astres par rapport à un système de coordonnées
             basé
             sur l'horizon et le zénith.</p>
 
-        <button onclick="astrologie()">Tirer les 12 messages</button>
-        <div id="reponse">
-            <div id="carte"></div>
-        </div>
+        <button onclick="astrologie()" aria-label="Tirer des messages inspirants pour chaque signe astrologique"
+            class="affichage_messages">
+            Tirer les 12 messages
+        </button>
+        <div id="carte"></div>
+        <div id="reponse"></div>
     </main>
     <footer>
-        <img src="./assets/images/logo_avec fond.webp" alt="Logo Léa" class="logo">
-        <p>&copy;Léa Martinaud</p>
-        <p>&copy;ECF1 : Frontend</p>
+        <img src="./assets/images/logo_avec fond.webp" alt="Logo de Léa Martinaud" class="logo">
+        <p>&copy; Léa Martinaud</p>
+        <p>&copy; ECF1 : Frontend</p>
         <div class="mention-legale">
             <a href="./mention_legale.html" class="a-footer">Mentions légales</a>
             <a href="./CGU.html" class="a-footer">Conditions d'utilisation</a>
